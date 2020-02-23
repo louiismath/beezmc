@@ -1,0 +1,14 @@
+teams-enabled: false
+use-default-teams: true
+
+Teams:
+     Rouge:
+         name: Rouge
+         displayname: &cRouge
+         prefix: "&c"
+         showPrefix: true
+         suffix: "Rouge"
+         showSuffix: false
+         assignArmor: false
+         showGlow: false
+         friendlyFire: false
