@@ -9,6 +9,7 @@ import com.beez.api.listeners.connect.PlayerJoinListener;
 import com.beez.api.listeners.connect.PlayerPreJoinListener;
 import com.beez.api.listeners.connect.PlayerQuitListener;
 import com.beez.api.listeners.move.PlayerMoveListener;
+import com.beez.api.tools.gui.GUIManager;
 
 public class ListenersManager {
 	
@@ -21,11 +22,22 @@ public class ListenersManager {
 	}
 	
 	public void registerListeners() {
+		
+		/**
+		 * PLAYER LISTENERS
+		 */
+		
 		pluginManager.registerEvents(new PlayerPreJoinListener(), plugin);
 		pluginManager.registerEvents(new PlayerJoinListener(), plugin);
 		pluginManager.registerEvents(new PlayerQuitListener(), plugin);
 		pluginManager.registerEvents(new PlayerChatListener(), plugin);
 		pluginManager.registerEvents(new PlayerMoveListener(), plugin);
+		
+		/**
+		 * TOOLS
+		 */
+		
+		pluginManager.registerEvents(new GUIManager(), plugin);
 	}
 
 }

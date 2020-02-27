@@ -4,6 +4,8 @@ import org.bukkit.ChatColor;
 
 public class ChatMessage {
 	
+	// Utilisation du %value% pour le remplacer
+	
 	/**
 	 * PRÉFIXES
 	 */
@@ -14,9 +16,16 @@ public class ChatMessage {
 	public static String hive_chat_prefix = "§f(§2Hive§f) " + ChatColor.RESET;
 	
 	/**
+	 * COMMANDS
+	 */
+	
+	public static String mtp_prefix = "§f(§6§lMTP§f) " + ChatColor.RESET;
+	public static String mtp_teleport = mtp_prefix + "§e%player1% §f§l> §r§bplayer2" + ChatColor.RESET;
+	
+	/**
 	 * PERMISSIONS
 	 */
 	
-	public static String no_permission = "§cVous n'avez pas les droits nécessaires pour effectuer cela. Veuillez contacter les administrateurs si vous croyez que c'est une erreur,";
+	public static String no_permission = "§cVous n'avez pas les droits nécessaires pour effectuer cela. Veuillez contacter les administrateurs si vous croyez que c'est une erreur." + ChatColor.RESET;
 
 }
